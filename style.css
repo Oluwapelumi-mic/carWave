@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+ *, ::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0%;
+}
+ul {
+   list-style: disc;
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: rgb(241, 238, 247);
+}
+.nav-links {
+   display: flex;
+   align-items: center;
+}
+.nav-links li {
+   margin: 0 50px; 
+} 
+.active {
+   color:rgb(53, 3, 188) ;
+   text-decoration: underline;
+   font-weight: bold;
+}
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./images/peter-broomfield-m3m-lnR90uM-unsplash.jpg');
+    background-position: top;
+    background-size: cover;
+    display: flex ;
+    align-items: flex-end;
+    justify-content: center ;
+}
+.ctn {
+    padding: 8px 8px ;
+    background-color:rgb(53, 3, 188) ;
+    border-radius: 20px;
+    color: rgb(241, 238, 247);
+    text-decoration: none;
+}
+.intro {
+        margin-bottom: 250px;
+        color: whitesmoke;
+        text-align: center;   
+}
+.intro  h2 {
+    font-size: 4vmin;
+    margin-bottom: 16px;
+} 
+.intro  h1 {
+    font-family: 'Caveat', cursive;
+    font-size: 15vmin;
+} 
+section {
+    width: 80%;
+    margin: 60px auto;
+}
+.ABOUT {
+    text-align: center;
+    font-size: 4vmin;
+    color: rgb(53, 3, 188);
+}
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.carousel-buttons {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel-buttons button {
+  margin: 0 5px;
+}
+.carousel-buttons {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%) ;
+    color: rgba(255, 255, 255);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+ }
+ .carousel-buttons:hover,
+ .carousel-button:focus{
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, .2);
+ }
+ .carousel-buttons:focus {
+    outline: 1px solid black;
+ }
+ .carousel-buttons.prev {
+    left: 1rem;
+ }
+ .carousel-buttons.next {
+    right: 1rem;
+ }
+ 
